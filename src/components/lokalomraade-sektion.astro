@@ -12,6 +12,9 @@
   </div>
 
   <div class="tekst-indhold">
+    <p>Hos Another Closet kan du se alle tilgængelige produkter i dit lokalområde. <br />D. 1 i hver måned poster vi nye styles, i vores online katalog.</p>
+    <p>Vælg dit lokalområde på listen til venstre, for at se hvad der er tilgængeligt nær dig!</p>
+    <!-- <img class="pil" src="/images/pil.svg" alt="pil" /> -->
     <p>Vi har fart på og åbner konstant nye tøjfællesskaber, så endnu flere kvinder kan dele tøj i stedet for at købe nyt.</p>
     <p>Skriv dig på ventelisten, og vær den første til at få besked, når vi åbner i nærheden af dig, eller hør hvordan, du starter dit eget tøjfællesskab.</p>
     <a href="#venteliste" class="knap">Start dit eget tøjfællesskab!</a>
@@ -27,7 +30,7 @@
 
   .byer {
     background-color: white;
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
   }
 
   .by-liste {
@@ -48,15 +51,31 @@
     text-decoration: none;
     color: inherit;
   }
+  .by-liste li a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block; /* Nødvendigt for transform */
+    transition:
+      transform 0.2s ease,
+      text-decoration 0.2s ease;
+  }
 
   .by-liste li a:hover {
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 4px;
+    transform: scale(1.05);
   }
 
+  /* .by-liste li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+    transform: scale(1.05);
+  } */
+
   .tekst-indhold {
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

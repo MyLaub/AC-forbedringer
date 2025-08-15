@@ -1,25 +1,31 @@
 <section class="ambassador-section">
   <div class="ambassador-text">
-    <h2>Bliv ambassadør for</h2>
+    <h3>Bliv ambassadør for</h3>
     <h1 class="logo">ANOTHER CLOSET</h1>
     <p>Post 2 billeder på instagram, tag @AnotherCloset.dk og få gratis medlemskab!</p>
     <a href="#tilmelding" class="ambassador-knap">Tilmeld dig her!</a>
   </div>
 
-  <div class="ambassador-image">
+  <!-- <div class="ambassador-image">
     <img src="/images/916poster.webp" alt="Ambassadørskab poster" />
-  </div>
+  </div> -->
 </section>
 
 <style>
   .ambassador-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--rød);
-    color: white;
-    padding: 4rem 2rem;
+    color: black;
+    padding: 4rem 4rem;
     align-items: center;
     gap: 2rem;
+
+    min-height: 70vh;
+
+    background-image: url("/images/ambassador-baggrund.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .ambassador-text {
@@ -29,32 +35,28 @@
     font-family: "futura-pt", sans-serif;
   }
 
-  h2 {
-    font-weight: normal;
-  }
-
   .logo {
     font-family: "CCMetcon Heavy", sans-serif;
     font-size: 3rem;
-    color: white;
+    color: black;
   }
 
   .ambassador-knap {
     display: inline-block;
-    border: 1.5px solid white;
+    border: 1.5px solid black;
     padding: 0.75rem 1.5rem;
     font-family: "futura-pt";
     font-size: 1.2rem;
     text-decoration: none;
-    color: white;
+    color: black;
     border-radius: 999px;
     transition: background-color 0.2s ease;
     width: fit-content;
   }
 
   .ambassador-knap:hover {
-    background-color: white;
-    color: var(--rød);
+    background-color: black;
+    color: white;
   }
 
   .ambassador-image img {
@@ -73,6 +75,13 @@
       display: flex;
       flex-direction: column;
       padding: 2rem 0;
+
+      min-height: 100vh;
+
+      background-image: url("/images/ambassador-baggrund-mobil.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .ambassador-text {
@@ -82,7 +91,7 @@
     }
 
     .logo {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     .ambassador-image {

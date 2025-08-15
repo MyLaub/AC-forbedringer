@@ -25,6 +25,12 @@ html {
   --sort: #000000;
 }
 
+/* main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  overflow: visible;
+} */
+
 /* Fonter */
 /* test connection gitr*/
 
@@ -48,14 +54,32 @@ html {
 h1 {
   font-family: "the-seasons", serif;
   font-style: normal;
+  font-weight: 100;
   font-size: 3rem;
   line-height: 1.2;
 }
 
-h2 {
+/* h2 {
   font-family: "futura-pt", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 2rem;
+} */
+h2 {
+  font-family: "the-seasons", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: "futura-pt", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: "CCMetcon Heavy";
 }
 
 p {
@@ -92,4 +116,22 @@ article > img {
 .product_info {
   margin-top: 1rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }

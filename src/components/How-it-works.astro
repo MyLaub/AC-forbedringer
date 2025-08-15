@@ -1,19 +1,19 @@
 <section class="how-it-works">
   <div class="step step-1">
-    <h2 class="nummer">1</h2>
+    <h4 class="nummer">1</h4>
     <p>Tilmeld dig for 149,-/mdr. og bliv en del af dit lokale tøjfællesskab.</p>
   </div>
   <div class="step step-2">
-    <h2 class="nummer">2</h2>
-    <p>Deltag i vores månedlige tøjbyttesalon. Medbring 3 stykker tøj og vælg 3 nye med hjem.</p>
+    <h4 class="nummer">2</h4>
+    <p>Deltag i vores månedlige tøjbyttesalon. Medbring 3 stykker tøj og vælg 3 styles nye med hjem.</p>
   </div>
   <div class="step step-3">
-    <h2 class="nummer">3</h2>
-    <p>En måned senere returnerer du tøjet og bytter til 3 nye stykker.</p>
+    <h4 class="nummer">3</h4>
+    <p>En måned senere returnerer du tøjet og bytter til 3 nye styles.</p>
   </div>
 </section>
 
-<style>
+<!-- <style>
   .how-it-works {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -76,6 +76,111 @@
     .step p {
       max-width: 100%;
       font-size: 1.25rem;
+    }
+  }
+</style> -->
+<style>
+  .how-it-works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+
+  .step {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .step::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--step-bg, none);
+    background-size: cover;
+    background-position: center;
+    opacity: 100;
+    z-index: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .step::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--step-tint, transparent);
+    z-index: 1;
+  }
+
+  .step > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .nummer {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .step p {
+    max-width: 50%;
+  }
+
+  .step-1 {
+    --step-bg: url("/images/how1.webp");
+    --step-tint: rgba(139, 45, 40, 0.9);
+  }
+
+  .step-2 {
+    --step-bg: url("/images/how2.webp");
+    --step-tint: rgba(192, 162, 147, 0.9);
+  }
+
+  .step-3 {
+    --step-bg: url("/images/how3.webp");
+    --step-tint: rgba(64, 41, 29, 0.9);
+  }
+
+  .step-1:hover {
+    --step-tint: rgba(139, 45, 40, 0.4);
+  }
+
+  .step-2:hover {
+    --step-tint: rgba(192, 162, 147, 0.4);
+  }
+
+  .step-3:hover {
+    --step-tint: rgba(64, 41, 29, 0.4);
+  }
+
+  /* Mobil */
+  @media (max-width: 768px) {
+    .how-it-works {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .nummer {
+      font-size: 4rem;
+      margin: 0;
+    }
+
+    .step p {
+      max-width: 100%;
     }
   }
 </style>
