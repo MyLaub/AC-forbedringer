@@ -1,14 +1,14 @@
+---
+import Knap from "./Knap.astro";
+---
+
 <section class="ambassador-section">
   <div class="ambassador-text">
     <h3>Bliv ambassadør for</h3>
     <h1 class="logo">ANOTHER CLOSET</h1>
     <p>Post 2 billeder på instagram, tag @AnotherCloset.dk og få gratis medlemskab!</p>
-    <a href="#tilmelding" class="ambassador-knap">Tilmeld dig her!</a>
+    <Knap indhold="Tildmeld dig her!" href="/" color="black" />
   </div>
-
-  <!-- <div class="ambassador-image">
-    <img src="/images/916poster.webp" alt="Ambassadørskab poster" />
-  </div> -->
 </section>
 
 <style>
@@ -102,9 +102,6 @@
       width: 100%;
       height: auto;
       object-fit: cover;
-      display: block;
-    }
-    .ambassador-knap {
       display: block;
     }
   }

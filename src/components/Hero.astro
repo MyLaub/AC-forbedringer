@@ -1,10 +1,14 @@
+---
+import Knap from "./Knap.astro"
+---
+
 <section class="hero">
   <div class="hero-image">
     <img src="/images/hero.webp" alt="hero foto" />
       <div class="hero-text">
-    <h1>Dele-tøj på abonnement</h1>
+    <h2>Dele-tøj på abonnement</h2>
     <p>Hos Another Closet har vi skabt et socialt og bæredygtigt klædeskab, hvor du for 149,-/mdr. kan låne 3 unikke stykker tøj.</p>
-    <a href="#find-klaedeskab" class="cta">Find dit lokale klædeskab her</a>
+     <Knap indhold="Find dit lokale klædeskab her!" href="#find-klaedeskab" color="black" />
   </div>
   </div>
 
@@ -43,7 +47,7 @@
     padding: 2rem;
   }
 
-  .hero-text h1 {
+  .hero-text h2 {
     margin-bottom: 2rem;
   }
 
@@ -82,7 +86,7 @@
       padding: 2rem 1.5rem;
     }
 
-    .hero-text h1 {
+    .hero-text h2 {
       text-align: left;
     }
   

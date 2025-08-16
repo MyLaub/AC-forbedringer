@@ -1,3 +1,7 @@
+---
+import Knap from "./Knap.astro";
+---
+
 <section id="find-klaedeskab" class="lokalomraade-sektion">
   <div class="byer">
     <ul class="by-liste">
@@ -14,10 +18,10 @@
   <div class="tekst-indhold">
     <p>Hos Another Closet kan du se alle tilgængelige produkter i dit lokalområde. <br />D. 1 i hver måned poster vi nye styles, i vores online katalog.</p>
     <p>Vælg dit lokalområde på listen til venstre, for at se hvad der er tilgængeligt nær dig!</p>
-    <!-- <img class="pil" src="/images/pil.svg" alt="pil" /> -->
+
     <p>Vi har fart på og åbner konstant nye tøjfællesskaber, så endnu flere kvinder kan dele tøj i stedet for at købe nyt.</p>
     <p>Skriv dig på ventelisten, og vær den første til at få besked, når vi åbner i nærheden af dig, eller hør hvordan, du starter dit eget tøjfællesskab.</p>
-    <a href="#venteliste" class="knap">Start dit eget tøjfællesskab!</a>
+    <Knap indhold="Start dit eget tøjfællesskab!" href="/" color="black" />
   </div>
 </section>
 
@@ -54,7 +58,7 @@
   .by-liste li a {
     text-decoration: none;
     color: inherit;
-    display: inline-block; /* Nødvendigt for transform */
+    display: inline-block;
     transition:
       transform 0.2s ease,
       text-decoration 0.2s ease;
@@ -67,13 +71,6 @@
     transform: scale(1.05);
   }
 
-  /* .by-liste li a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 4px;
-    transform: scale(1.05);
-  } */
-
   .tekst-indhold {
     padding: 1rem 4rem;
     display: flex;
@@ -81,24 +78,6 @@
     justify-content: center;
     background-color: var(--blå);
     gap: 2rem;
-  }
-
-  .knap {
-    display: inline-block;
-    border: 1.5px solid black;
-    padding: 0.75rem 1.5rem;
-    font-family: "futura-pt";
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: black;
-    border-radius: 999px;
-    transition: background-color 0.2s ease;
-    width: fit-content;
-  }
-
-  .knap:hover {
-    background-color: var(--sort);
-    color: var(--hvid);
   }
 
   @media (max-width: 768px) {
