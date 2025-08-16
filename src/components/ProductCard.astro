@@ -34,9 +34,12 @@ const { data } = Astro.props;
     transform: scale(1.05);
   }
 
+  .product_view img {
+    aspect-ratio: 3 / 4;
+  }
+
   .product_view img,
   .product_info {
-    aspect-ratio: 3 / 4;
     transition: transform 0.3s ease;
   }
 
