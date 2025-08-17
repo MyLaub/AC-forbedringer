@@ -3,12 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}
+} */
 
 body {
   min-height: 100vh;
@@ -24,15 +24,6 @@ html {
   --hvid: #ffffff;
   --sort: #000000;
 }
-
-/* main {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  overflow: visible;
-} */
-
-/* Fonter */
-/* test connection gitr*/
 
 @font-face {
   font-family: "CCMetcon Heavy";
