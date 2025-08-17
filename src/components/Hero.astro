@@ -1,23 +1,22 @@
 ---
-import Knap from "./Knap.astro"
+import Knap from "./Knap.astro";
 import "../css/global.css";
 ---
 
 <section class="hero">
   <div class="hero-image">
     <img src="/images/hero.webp" alt="hero foto" />
-      <div class="hero-text">
-    <h1>Dele-tøj på abonnement</h1>
-    <p>Hos Another Closet har vi skabt et socialt og bæredygtigt klædeskab, hvor du for 149,-/mdr. kan låne 3 unikke stykker tøj.</p>
-     <Knap indhold="Find dit lokale klædeskab her!" href="#find-klaedeskab" color="black" />
+    <div class="hero-text">
+      <h1>Dele-tøj på abonnement</h1>
+      <p>Hos Another Closet har vi skabt et socialt og bæredygtigt klædeskab, hvor du for 149,-/mdr. kan låne 3 unikke stykker tøj.</p>
+      <Knap indhold="Find dit lokale klædeskab her!" href="#find-klaedeskab" color="black" />
+    </div>
   </div>
-  </div>
-
 </section>
 
 <style>
   .hero {
-    position: relative
+    position: relative;
     width: 100%;
     overflow: hidden;
   }
@@ -27,6 +26,7 @@ import "../css/global.css";
     width: 100%;
     height: 60%;
     overflow: hidden;
+    min-height: 60vh;
   }
 
   .hero-image img {
@@ -34,7 +34,9 @@ import "../css/global.css";
     width: 100%;
     object-fit: cover;
     display: block;
-   
+    width: 100%;
+    height: 100%;
+    inset: 0;
   }
 
   /* Tekst ovenpå billedet */
@@ -55,9 +57,7 @@ import "../css/global.css";
 
   .hero-text p {
     margin-bottom: 2rem;
-
   }
- 
 
   .hero-text .cta {
     font-family: "futura-pt", Arial, Helvetica, sans-serif;
@@ -91,9 +91,9 @@ import "../css/global.css";
     .hero-text h1 {
       text-align: left;
     }
-  
-  .hero-text .cta {
-    font-size: 1rem;
-  }
+
+    .hero-text .cta {
+      font-size: 1rem;
+    }
   }
 </style>

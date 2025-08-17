@@ -118,7 +118,14 @@ article > img {
 }
 
 @media (max-width: 768px) {
-  h1 {
+  h1,
+  section h1,
+  article h1,
+  nav h1,
+  aside h1,
+  header h1,
+  main h1,
+  footer h1 {
     font-size: 2rem;
   }
 
